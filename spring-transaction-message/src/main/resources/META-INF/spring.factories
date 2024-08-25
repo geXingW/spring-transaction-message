@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.gexingw.spring.transaction.message.infrastructure.config.TransactionMessageAutoConfiguration
+  top.gexingw.spring.transaction.message.infrastructure.config.TransactionMessageAutoConfiguration
