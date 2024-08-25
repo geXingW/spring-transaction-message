@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: spring-transaction-message-example-rabbitmq
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://homestead:3306/transaction-message?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: homestead
+    password: secret
+
+  rabbitmq:
+    host: homestead
+    port: 5672
+    username: homestead
+    password: secret
+    virtual-host: spring-cloud-case
+    publisher-confirm-type: correlated
