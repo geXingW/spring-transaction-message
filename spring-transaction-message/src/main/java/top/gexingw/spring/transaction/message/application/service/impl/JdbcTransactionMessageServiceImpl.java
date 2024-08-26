@@ -1,9 +1,9 @@
-package top.gexingw.spring.transaction.message.service.impl;
+package top.gexingw.spring.transaction.message.application.service.impl;
 
+import top.gexingw.spring.transaction.message.application.service.TransactionMessageService;
+import top.gexingw.spring.transaction.message.domain.message.TransactionMessage;
+import top.gexingw.spring.transaction.message.domain.message.TransactionMessageRepository;
 import top.gexingw.spring.transaction.message.infrastructure.util.TransactionUtil;
-import top.gexingw.spring.transaction.message.message.TransactionMessage;
-import top.gexingw.spring.transaction.message.message.TransactionMessageRepository;
-import top.gexingw.spring.transaction.message.service.TransactionMessageService;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;

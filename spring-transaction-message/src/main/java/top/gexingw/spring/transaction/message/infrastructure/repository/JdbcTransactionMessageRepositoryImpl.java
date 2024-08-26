@@ -3,9 +3,9 @@ package top.gexingw.spring.transaction.message.infrastructure.repository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import top.gexingw.spring.transaction.message.message.MessageStatus;
-import top.gexingw.spring.transaction.message.message.TransactionMessage;
-import top.gexingw.spring.transaction.message.message.TransactionMessageRepository;
+import top.gexingw.spring.transaction.message.domain.message.MessageStatus;
+import top.gexingw.spring.transaction.message.domain.message.TransactionMessage;
+import top.gexingw.spring.transaction.message.domain.message.TransactionMessageRepository;
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.RowMapper;
 
@@ -69,7 +69,7 @@ public class JdbcTransactionMessageRepositoryImpl implements TransactionMessageR
         String sql = "UPDATE transaction_message set retried_count = ?, next_retry_time = ?, message_status = ? WHERE id = ?";
         Object[] args = {message.getRetriedCount(), message.getNextRetryTime(), message.getMessageStatus().toString(), message.getId()};
         if (jdbcOperations.update(sql, args) <= 0) {
-            throw new RuntimeException("保存事务消息失败");
+            throw new RuntimeException("更新事务消息失败");
         }
     }
 

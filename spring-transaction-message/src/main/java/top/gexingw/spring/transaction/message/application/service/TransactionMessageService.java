@@ -1,6 +1,6 @@
-package top.gexingw.spring.transaction.message.service;
+package top.gexingw.spring.transaction.message.application.service;
 
-import top.gexingw.spring.transaction.message.message.TransactionMessage;
+import top.gexingw.spring.transaction.message.domain.message.TransactionMessage;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;

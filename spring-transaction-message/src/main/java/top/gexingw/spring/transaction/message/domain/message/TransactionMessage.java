@@ -1,4 +1,4 @@
-package top.gexingw.spring.transaction.message.message;
+package top.gexingw.spring.transaction.message.domain.message;
 
 import java.io.Serializable;
 import java.time.Instant;

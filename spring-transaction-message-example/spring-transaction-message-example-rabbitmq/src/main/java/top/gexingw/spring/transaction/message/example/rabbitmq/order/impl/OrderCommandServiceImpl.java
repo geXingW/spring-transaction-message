@@ -1,8 +1,8 @@
 package top.gexingw.spring.transaction.message.example.rabbitmq.order.impl;
 
+import top.gexingw.spring.transaction.message.application.service.TransactionMessageService;
+import top.gexingw.spring.transaction.message.domain.message.TransactionMessage;
 import top.gexingw.spring.transaction.message.example.rabbitmq.order.OrderCommandService;
-import top.gexingw.spring.transaction.message.message.TransactionMessage;
-import top.gexingw.spring.transaction.message.service.TransactionMessageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

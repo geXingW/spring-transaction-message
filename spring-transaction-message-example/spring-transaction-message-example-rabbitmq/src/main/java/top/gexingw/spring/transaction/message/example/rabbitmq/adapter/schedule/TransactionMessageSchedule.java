@@ -1,8 +1,8 @@
 package top.gexingw.spring.transaction.message.example.rabbitmq.adapter.schedule;
 
+import top.gexingw.spring.transaction.message.application.service.TransactionMessageService;
+import top.gexingw.spring.transaction.message.domain.message.TransactionMessage;
 import top.gexingw.spring.transaction.message.example.rabbitmq.infrastructure.util.JacksonUtil;
-import top.gexingw.spring.transaction.message.message.TransactionMessage;
-import top.gexingw.spring.transaction.message.service.TransactionMessageService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
